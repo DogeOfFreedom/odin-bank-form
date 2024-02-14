@@ -1,11 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>My Bank Form</h1>
+    <form class="bank-form">
+      <div class="email-container">
+        <label for="email">Email</label>
+        <input name="email" type="text" />
+        <span class="error"></span>
+      </div>
+      <div class="country-container">
+        <label for="country">Country</label>
+        <input name="country" type="text" />
+        <span class="error"></span>
+      </div>
+      <div class="zipcode-container">
+        <label for="zipCode">Zip Code</label>
+        <input name="zipCode" type="text" />
+        <span class="error"></span>
+      </div>
+      <div class="password-container">
+        <label for="password">Password</label>
+        <input name="password" type="text" />
+        <span class="error"></span>
+      </div>
+      <div class="confirm-password-container">
+        <label for="confirmPassword">Confirm Password</label>
+        <input name="confirmPassword" type="text" />
+        <span class="error"></span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
