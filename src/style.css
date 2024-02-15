@@ -24,10 +24,10 @@ form {
 form div {
   display: flex;
   flex-direction: column;
+  font-size: var(--label-font-size);
 }
 
 form div label {
-  font-size: var(--label-font-size);
   margin-bottom: 10px;
   font-weight: bold;
 }

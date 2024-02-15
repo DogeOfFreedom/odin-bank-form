@@ -3,37 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>My Bank Form</title>
   </head>
   <body>
     <h1>My Bank Form</h1>
     <form class="bank-form">
-      <div class="email-container">
+      <div>
         <label for="email">Email</label>
-        <input name="email" type="text" />
-        <span class="error"></span>
+        <input name="email" type="email" required />
+        <span class="email-error"></span>
       </div>
-      <div class="country-container">
+      <div>
         <label for="country">Country</label>
-        <input name="country" type="text" />
-        <span class="error"></span>
+        <input name="country" type="text" required />
+        <span class="country-error"></span>
       </div>
-      <div class="zipcode-container">
+      <div>
         <label for="zipCode">Zip Code</label>
-        <input name="zipCode" type="text" />
-        <span class="error"></span>
+        <input name="zipCode" type="number" required />
+        <span class="zipcode-error"></span>
       </div>
-      <div class="password-container">
+      <div>
         <label for="password">Password</label>
-        <input name="password" type="text" />
-        <span class="error"></span>
+        <input
+          name="password"
+          type="password"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+        <span class="password-error"></span>
       </div>
-      <div class="confirm-password-container">
+      <div>
         <label for="confirmPassword">Confirm Password</label>
-        <input name="confirmPassword" type="text" />
-        <span class="error"></span>
+        <input name="confirmPassword" type="password" required />
+        <span class="confirm-password-error"></span>
       </div>
-      <button type="submit">Submit</button>
+      <button type="button">Submit</button>
     </form>
   </body>
 </html>
